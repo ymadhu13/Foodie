@@ -1,5 +1,5 @@
 // src/App.jsx
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
 
 import Navbar from "./components/Navbar";
@@ -25,7 +25,7 @@ export default function App() {
   const addToCart = (item) => setCart([...cart, item]);
 
   return (
-    <Router>
+    <>
       <ScrollToTop />
 
       {/* Navbar */}
@@ -57,6 +57,6 @@ export default function App() {
 
       {/* Footer */}
       <FooterSection />
-    </Router>
+    </>
   );
 }
