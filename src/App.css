@@ -1,0 +1,66 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.app-download-section {
+  background: linear-gradient(135deg, #ff4b2b, #ff416c); /* red-pink gradient */
+  text-align: center;
+  border-radius: 12px 12px 0 0;
+}
+/* Reduce image height */
+.carousel-img {
+  height: 300px;       /* adjust as needed (default images are very tall) */
+  object-fit: cover;   /* keeps aspect ratio while cropping */
+  border-radius: 10px; /* optional rounded corners */
+}
+
+/* Reduce arrow size */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 2rem;
+  height: 2rem;
+  background-size: 100% 100%;
+}
+
+/* Move arrows slightly inward */
+.custom-control {
+  width: 5%;
+}
